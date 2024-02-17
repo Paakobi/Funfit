@@ -36,4 +36,26 @@
     <servlet-name>updateparticipanttest</servlet-name>
     <url-pattern>/updateparticipanttest</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BatchUpdateServlet</display-name>
+    <servlet-name>BatchUpdateServlet</servlet-name>
+    <servlet-class>com.example.FunFit.controller.BatchUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BatchUpdateServlet</servlet-name>
+    <url-pattern>/BatchUpdateServlet</url-pattern>
+     <url-pattern>/UpdateBatch</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ParticipantUpdateServlet</display-name>
+    <servlet-name>ParticipantUpdateServlet</servlet-name>
+    <servlet-class>com.example.FunFit.controller.ParticipantUpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ParticipantUpdateServlet</servlet-name>
+    <url-pattern>/ParticipantUpdateServlet</url-pattern>
+    <url-pattern>/UpdateParticipant</url-pattern>
+  </servlet-mapping>
 </web-app>
